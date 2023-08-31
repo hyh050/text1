@@ -1,0 +1,160 @@
+/*common (공통문서) 파일 import*/
+@import "common.css";
+
+
+
+body {
+    font-family: "Gmarket", sans-serif;
+    font-weight: 800;
+}
+
+
+button {
+    font-family: "NanumGothic", sans-serif;
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.inner {
+    width: 1392px;
+    /*width: 100%;*/
+    margin: 0 auto;
+}
+.layout{
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+.header {}
+
+/*Main*/
+.main {}
+
+section .secon500{
+    color: #70C6F2;
+}
+section .primary500{
+    color: #F88F48;
+}
+
+
+/*Visual*/
+.mainVisual {
+    margin-top: 181px;
+}
+.mainVisual .imgArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainVisual .imgArea div {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: -65px;
+}
+
+.mainVisual .imgArea div.item1{
+    background: #F88F48;
+    padding-top: 130px;
+    box-sizing: border-box;
+}
+
+.mainVisual .imgArea div.item1 p {
+    color: #fff;
+    font-family: "Gmarket Sans", sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 52px;
+}
+
+.mainVisual .imgArea div.item2 {
+    background: #fff;
+    padding-top: 96px;
+    box-sizing: border-box;
+}
+.mainVisual .imgArea div.item2 p{
+    color: #000;
+    font-family: "Gmarket Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 36px;
+    margin-bottom: 26px;
+}
+.mainVisual .imgArea div.item2 p:last-child{
+    margin-bottom: 0;
+}
+
+.mainVisual .imgArea div.item3 {
+    border: 1px solid #000;
+}
+.mainVisual .imgArea div.item3 img {
+    width: 100%;
+}
+
+
+/*MainTitle*/
+.mainTitle {
+    margin-top: 159px;
+}
+
+.mainTitle .titleArea {
+    text-align: center;
+    font-family: "Gmarket Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 36px;
+}
+.mainTitle .titleArea span {}
+.mainTitle .btnArea {
+    width: 300px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 50px;
+    margin: 11px auto 0;
+    text-align: center;
+    background: #FEAD62;
+    color: #fff;
+    font-family: "Pretendard", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+/*Success*/
+
+.success {
+    margin-top: 150px;
+}
+.success .sliderArea {
+    width: 1512px;
+    height: 594px;
+    border-radius: 300px 0 0 300px;
+    background: #F88F48;
+    margin-left: auto;
+}
+.success .sliderArea .slider {
+    width: 1130px;
+}
+.success .sliderArea .slider .slick-slide {}
+.success .sliderArea .slider .slick-slide .imgWrap {}
+.success .sliderArea .slider .slick-slide .imgWrap img {}
+.success .sliderArea .slider .slick-slide .textWrap .tagBox {}
+.success .sliderArea .slider .slick-slide .textWrap .tagBox span {}
+.success .sliderArea .slider .slick-slide .textWrap .title {}
+.success .sliderArea .slider .slick-slide .textWrap .subTitle {}
+.success .sliderArea .slider .slick-slide .textWrap .desc {}
+
+
+
+
+
+

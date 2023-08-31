@@ -1,0 +1,87 @@
+/*GmarketSans bold medium light*/
+@font-face {
+    src: url("../font/GmarketSansTTFBold.ttf");
+    font-style: normal;
+    font-weight: 800;
+    font-family: "Gmarket";
+}
+@font-face {
+    src: url("../font/GmarketSansTTFMedium.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Gmarket";
+}
+@font-face {
+    src: url("../font/GmarketSansTTFLight.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Gmarket";
+}
+
+/*NanumGothic*/
+@font-face {
+    src: url("../font/NanumGothic-ExtraBold.ttf");
+    font-style: normal;
+    font-weight: 800;
+    font-family: "NanumGothic";
+}
+@font-face {
+    src: url("../font/NanumGothic-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-family: "NanumGothic";
+}
+@font-face {
+    src: url("../font/NanumGothic-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-family: "NanumGothic";
+}
+
+/*Pretendard*/
+@font-face {
+    src: url("../font/Pretendard-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-Medium.ttf");
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-Thin.ttf");
+    font-style: normal;
+    font-weight: 100;
+    font-family: "Pretendard";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
