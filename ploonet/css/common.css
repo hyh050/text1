@@ -214,11 +214,16 @@
 .footer {
     background: #FFE4C6;
 }
+
+.footer .footerinner{
+    width: 1392px;
+    margin: 0 auto;
+}
 .footer .topArea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 56px 411px 48px;
+    padding: 56px 0 48px;
     box-sizing: border-box;
 }
 .footer .topArea .serviceNumberWrap {
@@ -226,6 +231,7 @@
     height: 88px;
     background: #F88F48;
     border-radius: 8px;
+    /*text-align: center;*/
     padding-top: 22px;
     padding-left: 73px;
     box-sizing: border-box;
@@ -363,6 +369,10 @@
     .footer {
         background: #FFE4C6;
     }
+    .footer .footerinner{
+        width: 100%;
+    }
+
     .footer .topArea {
         display: block;
         /*justify-content: space-between;*/
@@ -408,6 +418,7 @@
         margin: 0 auto;
     }
     .footer .topArea .snsWrap .snsBox {
+        text-align: center;
     }
     .footer .topArea .snsWrap .snsBox a {
         display: inline-block;
