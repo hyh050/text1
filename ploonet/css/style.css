@@ -211,14 +211,15 @@ section .primary500{
 
 
 .about .diagramArea {
+    margin-top: 40px;
+    width: 50%;
+    height: 376px;
+    clear: both;
     /*flex: 1;*/
     /*margin-left: 100px;*/
     /*position: relative;*/
     /*top: 160px;*/
     /*left: 706px;*/
-    width: 50%;
-    height: 376px;
-    clear: both;
     /*overflow: hidden;*/
     /*display: flex;*/
     /*flex-wrap: wrap;*/
@@ -1677,7 +1678,7 @@ section .primary500{
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        padding: 32px 20px 40px;
+        padding: 32px 4% 40px;
         box-sizing: border-box;
         height: auto;
         /*height: 580px;*/
@@ -1710,16 +1711,21 @@ section .primary500{
 
     .about .diagramArea {
         width: 100%;
+        /*margin: 40px auto;*/
         /*position: absolute;*/
         /*top: 56%;*/
         /*left: 42px;*/
         /*transform: translateY(-50%);*/
         /*gap: 12px;*/
+        border: 2px solid red;
 
     }
     .about .diagramArea .diaWrap {
         width: 48%;
-        height: 48%;
+        height: 0px;
+        padding-bottom: 48%;
+        border: 2px solid red;
+        box-sizing: border-box;
     }
 
     .about .diagramArea .diaWrap:nth-child(4){
@@ -1728,6 +1734,8 @@ section .primary500{
 
     .about .diagramArea .diaWrap.long{
         width:  48%;
+        height: 0;
+        padding-bottom: 48%;
         margin: 0 0 4% 4%;
     }
     .about .diagramArea .diaWrap .title {
