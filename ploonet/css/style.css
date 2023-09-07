@@ -82,13 +82,6 @@ body.popupOn .layerPop{
 
 
 
-
-
-
-
-
-
-
 button {
     font-family: "NanumGothic", sans-serif;
     font-weight: 700;
@@ -165,18 +158,11 @@ section .primary500{
 }
 
 /*SubVisual*/
-.subVisual {
-    position: relative;
-}
-.subVisual .imgArea {}
-.subVisual .imgArea img {
-    display: block;
-}
+.subVisual {}
 .subVisual .titleArea {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 96px 0;
+    background: url("../image/main-banner.svg") center center no-repeat;
 }
 .subVisual .titleArea p{
     font-size: 24px;
@@ -195,14 +181,16 @@ section .primary500{
 .about {
     background-color: #FEF1EA;
 }
-.about .inner{
+.about .aboutInner{
     display: flex;
     align-items: center;
-    position: relative;
     height: 711px;
+    overflow: hidden;
 }
 .about .titleArea {
-    margin: 0 147px 0 117px;
+    width: 23%;
+    margin: 0 147px 0 381px;
+    /*margin: 0;*/
 }
 .about .titleArea .titleWrap {}
 .about .titleArea .titleWrap p {
@@ -223,13 +211,18 @@ section .primary500{
 
 
 .about .diagramArea {
-    position: absolute;
-    top: 160px;
-    left: 706px;
-    width: 1030px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+    /*flex: 1;*/
+    /*margin-left: 100px;*/
+    /*position: relative;*/
+    /*top: 160px;*/
+    /*left: 706px;*/
+    width: 50%;
+    height: 376px;
+    clear: both;
+    /*overflow: hidden;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*gap: 24px;*/
 
 }
 .about .diagramArea .diaWrap {
@@ -237,11 +230,19 @@ section .primary500{
     height: 176px;
     border-radius: 50%;
     background-color: #F88F48;
+    float: left;
+}
+
+.about .diagramArea .diaWrap:nth-child(4){
+    margin-left: 24px;
 }
 
 .about .diagramArea .diaWrap.long{
-    width: 815px;
-    border-radius: 180px;
+    /*display: inline-block;*/
+    width:  calc( 100% - 200px);
+    border-radius: 180px 0 0 180px;
+    margin: 0 0 24px 24px;
+
 }
 .about .diagramArea .diaWrap .title {
     font-family: "Gmarket",sans-serif;
@@ -771,7 +772,6 @@ section .primary500{
     margin-left: 8px;
 }
 
-
 /*StudioData*/
 .studioData {
     position: relative;
@@ -780,12 +780,17 @@ section .primary500{
 }
 .studioData .backImgArea {
     position: absolute;
-
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .studioData .backImgArea img {
-    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
 .studioData .titleArea {
     position: absolute;
     top: 93px;
@@ -1607,9 +1612,9 @@ section .primary500{
     /*MainVisual*/
     .mainVisual {
         position: relative;
-        height: 100vh;
-        overflow: hidden;
+        height: 92vh;
         margin-top: 50px;
+        overflow: hidden;
     }
     .mainVisual .imgArea {
         position: absolute;
@@ -1617,8 +1622,8 @@ section .primary500{
         right: 0;
         top: 0;
         bottom: 0;
-        background-image: url("../image/mainHeroMobile.jpg");
-        width: 100%;
+        background: url("../image/mainHeroMobile.jpg") no-repeat top center;
+        background-size: cover;
     }
     .mainVisual .imgArea img {
         display: none;
@@ -1632,9 +1637,11 @@ section .primary500{
     .mainVisual .titleArea .topLIne {
         width: 96px;
         height: 4px;
+
     }
     .mainVisual .titleArea .textWrap {
         margin-top: 12px;
+        white-space: nowrap;
     }
     .mainVisual .titleArea .textWrap h2 {
         font-weight: 800;
@@ -1642,23 +1649,20 @@ section .primary500{
         line-height: 32px;
     }
 
-    /*SubVisual*/
-    .subVisual {
-        position: relative;
+    .mainVisual .titleArea .textWrap h2 p{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 32px;
     }
-    .subVisual .imgArea {}
-    .subVisual .imgArea img {
-        display: block;
-        height: 16vh;
-    }
-    .subVisual .titleArea {
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 86%;
 
+    /*SubVisual*/
+    .subVisual .titleArea {
+        padding: 40px 0;
     }
+
     .subVisual .titleArea p{
+        margin: 0 auto;
+        width: 90%;
         font-size: 16px;
         line-height: 24px;
         font-weight: 700;
@@ -1668,19 +1672,22 @@ section .primary500{
     .about {
         background-color: #FEF1EA;
     }
-    .about .inner{
+    .about .aboutInner{
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        padding: 32px 0 0;
+        padding: 32px 20px 40px;
         box-sizing: border-box;
-        height: 580px;
+        height: auto;
+        /*height: 580px;*/
         /*align-items: center;*/
         /*position: relative;*/
         /*height: 711px;*/
     }
     .about .titleArea {
-        margin: 0  auto;
-        width: 86%;
+        margin: 0 auto;
+        width: 100%;
     }
     .about .titleArea .titleWrap {
         text-align: center;
@@ -1702,21 +1709,26 @@ section .primary500{
 
 
     .about .diagramArea {
-        width: 475px;
-        position: absolute;
-        top: 56%;
-        left: 42px;
-        transform: translateY(-50%);
-        gap: 12px;
+        width: 100%;
+        /*position: absolute;*/
+        /*top: 56%;*/
+        /*left: 42px;*/
+        /*transform: translateY(-50%);*/
+        /*gap: 12px;*/
 
     }
     .about .diagramArea .diaWrap {
-        width: 138px;
-        height: 138px;
+        width: 48%;
+        height: 48%;
+    }
+
+    .about .diagramArea .diaWrap:nth-child(4){
+        margin-left: 4%;
     }
 
     .about .diagramArea .diaWrap.long{
-        width: 260px;
+        width:  48%;
+        margin: 0 0 4% 4%;
     }
     .about .diagramArea .diaWrap .title {
         font-size: 16px;
