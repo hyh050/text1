@@ -184,13 +184,14 @@ section .primary500{
 .about .aboutInner{
     display: flex;
     align-items: center;
-    height: 711px;
+    /*height: 711px;*/
+    padding-top: 1.5%;
+    padding-bottom: 5%;
     overflow: hidden;
 }
 .about .titleArea {
     width: 23%;
     margin: 0 147px 0 381px;
-    /*margin: 0;*/
 }
 .about .titleArea .titleWrap {}
 .about .titleArea .titleWrap p {
@@ -209,22 +210,10 @@ section .primary500{
     line-height: 32px;
 }
 
-
 .about .diagramArea {
     margin-top: 40px;
     width: 50%;
-    height: 376px;
     clear: both;
-    /*flex: 1;*/
-    /*margin-left: 100px;*/
-    /*position: relative;*/
-    /*top: 160px;*/
-    /*left: 706px;*/
-    /*overflow: hidden;*/
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*gap: 24px;*/
-
 }
 .about .diagramArea .diaWrap {
     width: 176px;
@@ -239,7 +228,6 @@ section .primary500{
 }
 
 .about .diagramArea .diaWrap.long{
-    /*display: inline-block;*/
     width:  calc( 100% - 200px);
     border-radius: 180px 0 0 180px;
     margin: 0 0 24px 24px;
@@ -295,21 +283,22 @@ section .primary500{
     margin-top: 154px;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 .business .slideArea .circleSlider {
-    width: 472px;
-    margin-right: 120px;
+    width: 34%;
+    margin-right: 90px;
 }
 
 .business .slideArea .circleSlider .slick-slide{
     position: relative;
-    width: 467px;
+    width: 100%;
     transition: 0.5s;
-    /*border: 5px solid transparent;*/
 }
 .business .slideArea .circleSlider .slick-slide div{
-    width: 240px;
-    height: 240px;
+    width: 48%;
+    height: 0;
+    padding-bottom: 46%;
     border: 4px solid #F88F48;
     border-radius: 50%;
     background-color: #fff;
@@ -321,7 +310,7 @@ section .primary500{
 .business .slideArea .circleSlider .slick-slide div:nth-child(2){
     position: absolute;
     top: 50%;
-    left: 227px;
+    left: 48%;
     transform: translateY(-50%);
     border: 4px solid #70C6F2;
 }
@@ -376,9 +365,10 @@ section .primary500{
 
 .business .slideArea .slider {
     overflow: hidden;
+    width: 100%;
 }
 .business .slideArea .slider .slick-slide {
-    width: 800px;
+    width: auto;
     margin: 0 20px;
 }
 .business .slideArea .slider .slick-slide .title {}
@@ -1717,14 +1707,12 @@ section .primary500{
         /*left: 42px;*/
         /*transform: translateY(-50%);*/
         /*gap: 12px;*/
-        border: 2px solid red;
 
     }
     .about .diagramArea .diaWrap {
         width: 48%;
         height: 0px;
         padding-bottom: 48%;
-        border: 2px solid red;
         box-sizing: border-box;
     }
 
@@ -1760,6 +1748,7 @@ section .primary500{
         box-sizing: border-box;
     }
     .business .titleArea {
+        padding: 0 2%;
     }
 
     .business .titleArea .title {
@@ -1768,8 +1757,8 @@ section .primary500{
         font-weight: 800;
         line-height: 32px;
         color: #70C6F2;
-        padding: 0 68px;
-        text-align: left;
+        /*padding: 0 68px;*/
+        text-align: center;
     }
     .business .titleArea .subtitleWrap {}
     .business .titleArea .subtitleWrap p {
@@ -1779,26 +1768,29 @@ section .primary500{
         line-height: 16px;
         margin-top: 16px;
         padding: 0 10px;
+        text-align: left;
     }
 
     .business .slideArea {
         display: block;
         margin-top: 62px;
-        position: relative;
+        /*position: relative;*/
+        width: 100%;
     }
     .business .slideArea .circleSlider {
-        width: 310px;
-        margin: 0 20px;
+        width: 100%;
+        margin: 0;
+        padding: 0 2%;
     }
 
     .business .slideArea .circleSlider .slick-slide{
         position: relative;
-        width: auto;
+        width: 100%;
         transition: 0.5s;
+        box-sizing: border-box;
     }
     .business .slideArea .circleSlider .slick-slide div{
-        width: 160px;
-        height: 160px;
+        /*height: 160px;*/
         border: 2px solid #F88F48;
         border-radius: 50%;
         background-color: #fff;
@@ -1810,7 +1802,6 @@ section .primary500{
     .business .slideArea .circleSlider .slick-slide div:nth-child(2){
         position: absolute;
         top: 50%;
-        left: 149px;
         transform: translateY(-50%);
         border: 2px solid #70C6F2;
     }
@@ -1829,24 +1820,25 @@ section .primary500{
         font-family: "NanumGothic",sans-serif;
         font-size: 16px;
         font-weight: 700;
-        line-height: 160px;
+        line-height: 800%;
         color: #F88F48;
         text-align: center;
     }
     .business .slideArea .circleSlider .slick-slide div.twoLine p{
         line-height: 24px;
-        padding: 60px 12px 0;
+        padding: 32% 0;
     }
 
 
 
 
     .business .slideArea .slider {
+        /*width: 100%;*/
         overflow: hidden;
         margin-top: 62px;
     }
     .business .slideArea .slider .slick-slide {
-        width: 340px;
+        margin: 0;
     }
     .business .slideArea .slider .slick-slide .title {}
     .business .slideArea .slider .slick-slide .title p {
@@ -1858,10 +1850,10 @@ section .primary500{
         line-height: 16px;
     }
     .business .slideArea .slider .slick-slide .sliderWrap {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        /*flex-direction: column;*/
         margin-top: 24px;
-        justify-content: center;
+        /*justify-content: center;*/
     }
     .business .slideArea .slider .slick-slide .sliderWrap ul:nth-child(2) {
         margin: 36px 0;
@@ -1899,8 +1891,13 @@ section .primary500{
         padding: 0;
     }
 
+    .business .slideArea .slider .slick-slide .sliderWrap:nth-child(2) ul li:nth-child(1) span{
+        display: block;
+    }
+
+
     .business .slideArea .progressBar {
-        width: 340px;
+        width: 100%;
         bottom: -28px;
     }
 

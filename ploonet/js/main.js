@@ -51,6 +51,7 @@ $secBusiness.find(".circleSlider").slick({
 });
 
 
+
 $secBusiness.find(".slider").on("init", function (event ,slick) {
     const ratio =  ((slick.currentSlide+1)  /  slick.slideCount)*100;
     $secBusiness.find(".grogress").css({width : ratio + "%"});
@@ -59,7 +60,7 @@ $secBusiness.find(".slider").on("init", function (event ,slick) {
 
 $secBusiness.find(".slider").slick({
     arrows: false,
-    variableWidth: true,
+    // variableWidth: true,
     asNavFor: $secBusiness.find(".circleSlider"),
 });
 
