@@ -74,8 +74,9 @@ $secStudioChatBot.find(".slider").slick({
     arrows: false,
     variableWidth: true,
     centerMode:true,
-    centerPadding: "200px",
+    // centerPadding: "200px",
     dots: true,
+    slidesToShow: 3,
     appendDots: $secStudioChatBot.find(".dotArea"),
     dotsClass: "customDot",
     customPaging : function (slick, index) {

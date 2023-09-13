@@ -460,10 +460,13 @@ section .primary500{
     line-height: 44px;
 }
 .studioChatBot .titleArea p .secon500{}
-.studioChatBot .slideArea {}
+.studioChatBot .slideArea {
+    width: 100%;
+}
 .studioChatBot .slideArea .slider {
     height: 360px;
-    width: 880px;
+    /*width: 880px;*/
+    width: 64%;
     margin: 0 auto;
 }
 
@@ -478,20 +481,22 @@ section .primary500{
     transition: 0.3s;
     width: 360px;
     box-shadow: 0 12px 4px rgba(0, 0, 0, 0.25);
-    margin: 12px 0;
+    /*margin: 12px 0;*/
 }
+
+.studioChatBot .slideArea .slider .slick-center {
+    transform: scale(0.8);
+    box-sizing: border-box;
+    transition: 0.3s;
+    background: #fff;
+}
+
 .studioChatBot .slideArea .slider .slick-slide img{
     transform: scale(0.5);
     width: 100%;
     opacity: 0;
 }
 
-.studioChatBot .slideArea .slider .slick-center {
-    transform: scale(1);
-    box-sizing: border-box;
-    transition: 0.3s;
-    background: #fff;
-}
 .studioChatBot .slideArea .slider .slick-center img{
     opacity: 1;
     transform: scale(1);
@@ -1904,7 +1909,7 @@ section .primary500{
 
     /*StudioChatBot*/
     .studioChatBot {
-        position: relative;
+        /*position: relative;*/
         padding: 20px 0 40px;
         margin-top: 120px;
         box-sizing: border-box;
@@ -1922,10 +1927,12 @@ section .primary500{
         font-weight: 800;
         line-height: 32px;
     }
+
     .studioChatBot .slideArea .slider {
         height: auto;
         width: 100%;
-        margin: 16px auto 0;
+        margin: 24px auto 0;
+        overflow: hidden;
     }
 
     .studioChatBot .slideArea .slider .slick-slide {
@@ -1934,20 +1941,25 @@ section .primary500{
         transform: scale(0.4);
         transition: 0.3s;
         width: 160px;
+        /*width: 100px;*/
         box-shadow: 0 12px 4px rgba(0, 0, 0, 0.25);
+        margin: 0;
+        padding: 0;
     }
+
+    .studioChatBot .slideArea .slider .slick-center {
+        transform: scale(0.8);
+        box-sizing: border-box;
+        transition: 0.3s;
+        background: #fff;
+    }
+
     .studioChatBot .slideArea .slider .slick-slide img{
         transform: scale(0.5);
         width: 100%;
         opacity: 0;
     }
 
-    .studioChatBot .slideArea .slider .slick-center {
-        transform: scale(1);
-        box-sizing: border-box;
-        transition: 0.3s;
-        background: #fff;
-    }
     .studioChatBot .slideArea .slider .slick-center img{
         opacity: 1;
         transform: scale(1);
@@ -1955,20 +1967,24 @@ section .primary500{
 
     .studioChatBot .dotArea {
         margin-top: 32px;
+
     }
     .studioChatBot .dotArea .customDot {
-        width: 100%;
+        margin: 0 auto;
+        /*width: 100%;*/
         display: flex;
         text-align: center;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .studioChatBot .dotArea .customDot li {
+        width: 40%;
         text-align: left;
         font-family: "Gmarket", sans-serif;
         font-size: 16px;
         font-weight: 700;
         line-height: 24px;
-        margin-left: 8px;
+        margin-left: 0;
         text-shadow: -1px 0 #667085, 0 1px #667085, 1px 0 #667085, 0 -1px #667085;
     }
 
