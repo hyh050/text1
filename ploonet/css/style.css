@@ -67,6 +67,11 @@ body.popupOn .layerPop{
 .layerPop .noticeModal .modalBody {
     position: relative;
 }
+
+.layerPop .noticeModal .modalBody img{
+    width: 100%;
+}
+
 .layerPop .noticeModal .modalBody .btn {
     position: absolute;
     top: 277px;
@@ -331,7 +336,7 @@ section .primary500{
     font-family: "NanumGothic",sans-serif;
     font-size: 24px;
     font-weight: 700;
-    line-height: 240px;
+    line-height: 220px;
     color: #F88F48;
     text-align: center;
 }
@@ -540,7 +545,8 @@ section .primary500{
 }
 
 .what .titleArea {
-    width: 868px;
+    /*width: 868px;*/
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -553,7 +559,6 @@ section .primary500{
 }
 .what .titleArea .subtitleWrap {
     margin-top: 8px;
-
 }
 .what .titleArea .subtitleWrap p {
     font-family: "Gmarket",sans-serif;
@@ -562,7 +567,7 @@ section .primary500{
     line-height: 44px;
 }
 .what .titleArea .desc {
-    margin-top: 8px;
+    margin:  8px auto 0;
     width: 868px;
 }
 .what .titleArea .desc p {
@@ -575,17 +580,27 @@ section .primary500{
 
 
 .what .contentsArea {
-    width: 1312px;
+    /*width: 1312px;*/
+    /*width: 100%;*/
     margin: 96px auto 60px ;
+    padding: 0 5%;
+    box-sizing: border-box;
 }
 .what .contentsArea ul {
     display: flex;
-    gap: 56px;
+    justify-content: space-between;
+    /*gap: 56px;*/
 }
+
+.what .contentsArea ul > li{
+    width: 32%;
+    /*width: 400px;*/
+}
+
 .what .contentsArea ul .contentsBox1 {
-    width: 400px;
+    /*width: 400px;*/
     border: 1px solid #000;
-    padding: 32px 70px 74px;
+    /*padding: 32px 70px 74px;*/
     box-sizing: border-box;
     background-color: #F2F4F7;
 
@@ -599,22 +614,27 @@ section .primary500{
     font-size: 24px;
     font-weight: 800;
     line-height: 44px;
+    margin-top: 32px;
 }
 .what .contentsArea ul .contentsBox1 .contents {
-    width: 260px;
+    /*width: 260px;*/
+    width: 65%;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 24px 20px;
+    /*gap: 24px 20px;*/
     margin-top: 48px;
 }
 .what .contentsArea ul .contentsBox1 .contents .box {
-    width: 120px;
+    width: 46%;
     height: 80px;
     line-height: 80px;
     border-radius: 4px;
     border: 1px solid #000;
     box-sizing: border-box;
     background: #fff;
+    margin-bottom: 24px;
 
     text-align: center;
     color: #000;
@@ -631,7 +651,7 @@ section .primary500{
 
 
 .what .contentsArea ul .contentsBox2 {
-    width: 400px;
+    /*width: 400px;*/
     border: 4px solid #F88F48;
     padding: 32px 78px 34px;
     box-sizing: border-box;
@@ -680,9 +700,9 @@ section .primary500{
 
 
 .what .contentsArea ul .contentsBox3 {
-    width: 400px;
+    /*width: 400px;*/
     border: 1px solid #000;
-    padding: 32px 30px 30px;
+    /*padding: 32px 30px 30px;*/
     box-sizing: border-box;
     background-color: #F2F4F7;
 
@@ -696,21 +716,29 @@ section .primary500{
     font-size: 24px;
     font-weight: 800;
     line-height: 44px;
+    margin-top: 32px;
+
 }
 .what .contentsArea ul .contentsBox3 .contents {
+    width: 83%;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 16px;
+    /*gap: 0 16px;*/
     margin-top: 48px;
     box-sizing: border-box;
 }
 .what .contentsArea ul .contentsBox3 .contents .box {
     width: 100px;
     height: 100px;
+    /*width: 30%;*/
+    /*height: 30%;*/
     border-radius: 50%;
     border: 1px solid #F88F48;
     box-sizing: border-box;
     background: #fff;
+    margin-bottom: 16px;
 
     text-align: center;
     color: #F88F48;
@@ -1599,6 +1627,13 @@ section .primary500{
 }
 
 @media (max-width: 768px) {
+
+    .layerPop .noticeModal{
+        width: 80%;
+    }
+
+
+
     .inner {
         width: 100%;
         padding: 0 20px;
@@ -1825,7 +1860,7 @@ section .primary500{
         font-family: "NanumGothic",sans-serif;
         font-size: 16px;
         font-weight: 700;
-        line-height: 800%;
+        line-height: 960%;
         color: #F88F48;
         text-align: center;
     }
@@ -2021,7 +2056,7 @@ section .primary500{
     }
     .what .titleArea .desc {
         margin-top: 8px;
-        width: 868px;
+        width: 100%;
     }
     .what .titleArea .desc p {
         font-family: "NanumGothic", sans-serif;
@@ -2043,15 +2078,22 @@ section .primary500{
     .what .contentsArea {
         width: 100%;
         margin: 48px auto 60px ;
+        padding: 0;
     }
     .what .contentsArea ul {
         display: block;
         gap: 0;
     }
+
+    .what .contentsArea ul > div {
+        width: 100%;
+    }
+
     .what .contentsArea ul .contentsBox1 {
         width: 100%;
         border: 1px solid #000;
-        padding: 16px 42px 24px;
+        /*padding: 16px 42px 24px;*/
+        padding: 0;
         box-sizing: border-box;
         background-color: #F2F4F7;
 
@@ -2067,16 +2109,16 @@ section .primary500{
         line-height: 24px;
     }
     .what .contentsArea ul .contentsBox1 .contents {
-        width: 260px;
+        /*width: 260px;*/
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
-        gap: 12px 14px;
+        /*gap: 12px 14px;*/
         margin-top: 24px;
     }
     .what .contentsArea ul .contentsBox1 .contents .box {
-        width: 120px;
+        /*width: 120px;*/
         height: 80px;
-        line-height: 80px;
         border-radius: 4px;
         border: 1px solid #000;
         box-sizing: border-box;
@@ -2093,7 +2135,7 @@ section .primary500{
     .what .contentsArea ul .contentsBox1 .contents .box:nth-child(6){
         padding-top: 20px;
         line-height: 20px;
-        padding: 20px 20px 0;
+        padding: 20px 10px 0;
     }
 
 
@@ -2150,7 +2192,7 @@ section .primary500{
     .what .contentsArea ul .contentsBox3 {
         width: 100%;
         border: 1px solid #000;
-        padding: 32px 32px 30px;
+        /*padding: 32px 32px 30px;*/
         box-sizing: border-box;
         background-color: #F2F4F7;
 
@@ -2166,6 +2208,7 @@ section .primary500{
         line-height: 24px;
     }
     .what .contentsArea ul .contentsBox3 .contents {
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
@@ -2173,8 +2216,8 @@ section .primary500{
         box-sizing: border-box;
     }
     .what .contentsArea ul .contentsBox3 .contents .box {
-        width: 88px;
-        height: 88px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         border: 1px solid #F88F48;
         box-sizing: border-box;
@@ -2240,8 +2283,9 @@ section .primary500{
     /*StudioData*/
     .studioData {
         position: relative;
-        width: 390px;
-        height: 1290px;
+        width: 100%;
+        height: 1300px;
+        /*height: calc(1120 + (1120 - 100%));*/
     }
     .studioData .backImgArea {
         position: absolute;
@@ -2378,7 +2422,7 @@ section .primary500{
 
     .what.Search .contentsArea {
         width: 100%;
-        margin: 48px auto 60px ;
+        /*margin: 48px auto 60px ;*/
     }
     .what.Search .contentsArea ul {
         display: block;
@@ -2387,7 +2431,8 @@ section .primary500{
     .what.Search .contentsArea ul .contentsBox1 {
         width: 100%;
         border: 1px solid #000;
-        padding: 16px 0 24px;
+        /*padding: 16px 0 24px;*/
+        padding: 0 0 24px;
         box-sizing: border-box;
         background-color: #F2F4F7;
 
@@ -2406,6 +2451,10 @@ section .primary500{
         margin: 24px auto 0;
         width: 100%;
         display: block;
+    }
+
+    .what.Search .contentsArea ul .contentsBox1 .contents .boxTitle:nth-child(3){
+        margin-top: 0px;
     }
 
 
@@ -2458,13 +2507,15 @@ section .primary500{
         font-size: 18px;
         /*font-weight: 800;*/
         line-height: 24px;
+        margin: 0;
     }
 
     .what.Search .contentsArea ul .contentsBox3 .contents {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
-        margin-top: 24px;
+        margin: 24px auto 0;
         box-sizing: border-box;
         justify-content: center;
     }
@@ -2591,11 +2642,13 @@ section .primary500{
         margin: 14px 16px 0 0;
     }
     .news .diagramArea .bottomWrap .leftBox .textContents {
+        width: 90%;
         top: 32px;
-        left: 0;
+        left: 50%;
         transform: translateY(0);
-        width: auto;
-        padding: 0 40px;
+        transform: translateX(-50%);
+        /*padding: 0 40px;*/
+        padding: 0;
     }
     .news .diagramArea .bottomWrap .leftBox .textContents .title {
         text-align: center;
@@ -2635,16 +2688,28 @@ section .primary500{
         margin: 62px auto 0;
         width: 100%;
         box-sizing: border-box;
-        position: relative;
+        /*position: relative;*/
 
     }
     .certification .sliderArea .slider {
         width: 100%;
+        /*transform: translateX(4%);*/
+        margin: 0 0 0 0;
+        /*padding: 0 0 0 4%;*/
+        box-sizing: border-box;
+        position: relative;
     }
     .certification .sliderArea .slider .slick-slide {
-        width: 348px;
-        margin: 0 0;
+        /*width: 0.86%;*/
+        /*width: 1%;*/
+        margin: 0 0 0 0;
+        padding: 0;
+        /*opacity: 0;*/
 
+    }
+
+    .certification .sliderArea .slider .slick-active{
+        /*opacity: 1;*/
     }
     .certification .sliderArea .slider .slick-slide .imgBox {
         width: 80%;

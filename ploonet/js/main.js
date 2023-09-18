@@ -89,7 +89,15 @@ $secCertification.find(".slider").slick({
     variableWidth: true,
     arrows: true,
     prevArrow: $secCertification.find(".prevArrow"),
-    nextArrow: $secCertification.find(".nextArrow")
+    nextArrow: $secCertification.find(".nextArrow"),
+    responsive : [
+        { breakpoint : 600,
+            settings: {
+                variableWidth: false
+            }
+
+        }
+    ]
 });
 
 
